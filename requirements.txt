@@ -3,3 +3,6 @@ google-generativeai
 pypdf
 scikit-learn
 python-dotenv
+gunicorn
+uvicorn
+python-multipart
