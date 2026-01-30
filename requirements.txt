@@ -1,0 +1,5 @@
+fastapi
+google-generativeai
+pypdf
+scikit-learn
+python-dotenv
