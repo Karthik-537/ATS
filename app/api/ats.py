@@ -126,8 +126,9 @@ async def ats_score(
     validate_resumes(resumes=resumes)
     resume_names, resumes_text = await extract_resumes_text_and_name(resumes=resumes)
     genai.configure(api_key=api_key)
+    print(api_key)
     model = genai.GenerativeModel(
-        GenaiModels.GEMINI_FLASH_LATEST.value
+        GenaiModels.GEMINI_FLASH_LITE_LATEST.value
     )
     try:
         jd_response = model.generate_content(jd_prompt(text=jd_text))
