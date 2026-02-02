@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="model name change">
+    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="Change in jd prompt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/ats.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/ats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.ats.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.debugger.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run server.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Shell Script.run server.executor&quot;: &quot;Run&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/91934/PycharmProjects/ats_system&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.ats.executor": "Debug",
+    "Python.debugger.executor": "Run",
+    "Python.run server.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.run server.executor": "Run",
+    "last_opened_file_path": "C:/Users/91934/PycharmProjects/ats_system"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\91934\PycharmProjects\ats_system" />
@@ -104,13 +103,22 @@
       <option name="project" value="LOCAL" />
       <updated>1769830379391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change in jd prompt">
+      <option name="closed" value="true" />
+      <created>1770038970569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770038970569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted docker file" />
     <MESSAGE value="model name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="model name change" />
+    <MESSAGE value="Change in jd prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change in jd prompt" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

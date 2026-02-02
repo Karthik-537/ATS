@@ -174,10 +174,19 @@ async def extract_resumes_text_and_name(resumes: List[UploadFile]) -> Tuple[List
 def optimize_resume_skills(jd_res: dict, resume_res: dict) -> Tuple[List[str], List[str]]:
     matched_skills = []
     unmatched_skills = []
-    for i in resume_res["skills"]:
-        unmatched_skills += list(set(jd_res["skills"][i]) - set(resume_res["skills"][i]))
-        resume_res["skills"][i] = list(set(resume_res["skills"][i]) & set(jd_res["skills"][i]))
-        matched_skills += resume_res["skills"][i]
+    for category in resume_res.get("skills", {}):
+        jd_skills_list = jd_res.get("skills", {}).get(category, [])
+        jd_lookup = {skill.casefold(): skill for skill in jd_skills_list}
+        resume_skills_list = resume_res["skills"].get(category, [])
+        resume_skills_folded = {skill.casefold() for skill in resume_skills_list}
+        category_matched = []
+        for folded_skill, original_case in jd_lookup.items():
+            if folded_skill in resume_skills_folded:
+                category_matched.append(original_case)
+            else:
+                unmatched_skills.append(original_case)
+        resume_res["skills"][category] = category_matched
+        matched_skills.extend(category_matched)
     # if is_experience_matched(resume_res, jd_res):
     #     resume_res["experience"] = "experience met"
     #     jd_res["experience"] = "experience met"
