@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="Deleted docker file" />
+    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="model name change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/ats.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/ats.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,12 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769790901598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="model name change">
+      <option name="closed" value="true" />
+      <created>1769830379391</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769830379391</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted docker file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted docker file" />
+    <MESSAGE value="model name change" />
+    <option name="LAST_COMMIT_MESSAGE" value="model name change" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -28,7 +28,7 @@ def jd_prompt(text):
         "Programming Languages": [],
         "Technologies and Core Competencies": [],
         "Databases & Storage": [],
-        "Soft": []
+        "Soft Skills": []
       }},
       "experience": {{
         "min_years":,
@@ -37,6 +37,7 @@ def jd_prompt(text):
     }}
     Rules:
     - If experience is not mentioned, set min_years and max_years as 0
+    - Don't add skills word at the end for soft skills
 
     Resume:
     {text}
@@ -57,7 +58,7 @@ def resume_prompt(resumes: list[str]) -> str:
             "Programming Languages": [],
             "Technologies and Core Competencies": [],
             "Databases & Storage": [],
-            "Soft": []
+            "Soft Skills": []
           }},
           "experience": {{
             "total_years": 0
@@ -126,7 +127,6 @@ async def ats_score(
     validate_resumes(resumes=resumes)
     resume_names, resumes_text = await extract_resumes_text_and_name(resumes=resumes)
     genai.configure(api_key=api_key)
-    print(api_key)
     model = genai.GenerativeModel(
         GenaiModels.GEMINI_FLASH_LITE_LATEST.value
     )
