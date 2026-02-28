@@ -187,12 +187,12 @@ def optimize_resume_skills(jd_res: dict, resume_res: dict) -> Tuple[List[str], L
                 unmatched_skills.append(original_case)
         resume_res["skills"][category] = category_matched
         matched_skills.extend(category_matched)
-    # if is_experience_matched(resume_res, jd_res):
-    #     resume_res["experience"] = "experience met"
-    #     jd_res["experience"] = "experience met"
-    # else:
-    #     resume_res["experience"] = "experience not matched with job description"
-    #     jd_res["experience"] = "experience not matched with resume"
+    if is_experience_matched(resume_res, jd_res):
+        resume_res["experience"] = "experience met"
+        jd_res["experience"] = "experience met"
+    else:
+        resume_res["experience"] = "experience not matched with job description"
+        jd_res["experience"] = "experience not matched with resume"
     return matched_skills, unmatched_skills
 
 
