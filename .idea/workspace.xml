@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="">
+    <list default="true" id="1013e879-c4c0-48c9-bf04-2f35b0489671" name="Changes" comment="Added experience for ats score">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/ats.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/ats.py" afterDir="false" />
     </list>
@@ -120,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770043619914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added experience for ats score">
+      <option name="closed" value="true" />
+      <created>1772247971401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772247971401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,18 +136,10 @@
     <MESSAGE value="model name change" />
     <MESSAGE value="Change in jd prompt" />
     <MESSAGE value="Changes in optimization of resume skills" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in optimization of resume skills" />
+    <MESSAGE value="Added experience for ats score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added experience for ats score" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/api/ats.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="msg" />

@@ -12,6 +12,8 @@ router = APIRouter(prefix="/ats", tags=["ATS"])
 
 load_dotenv()
 api_key = os.getenv("API_KEY")
+if not api_key:
+    api_key = os.environ.get("API_KEY")
 
 
 class GenaiModels(Enum):
